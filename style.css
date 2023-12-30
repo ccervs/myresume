@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:montserrat;
+}
+body{
+    background: #00b6c4;
+}
+.container{
+    background: #F5f5f5;
+    max-width: 1000px;
+    margin:100px auto;
+    height: 1500px;
+    padding: 40px;
+    box-shadow: 0 2px 20px rgba (0,0,0,0.3);
+}
+.profile{
+    text-align: auto;
+}
+.profile h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.profile h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.profile_container{
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+    overflow:hidden;
+    margin: 30px auto;
+    border: 15px groove deepskyblue;
+}
+.profile_container img{
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    flex: 1;
+    padding: 20px;
+}
+.left p{
+    line-height: 2;
+}
+.left ul li{
+    line-height: 2;
+}
+h2{
+    background: #00b6c4;
+    padding: 15px;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 20px;
+    border-radius: 0 50px 50px 0;
+
+}
+.right{
+    flex: 1;
+    padding: 20px;
+}
+.right h3{
+    margin-bottom: 15px;
+}
+.right p{
+    line-height: 2.9;
+}
+.right ul li{
+    line-height:2;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 700px){
+    .main{
+        flex-direction: column;
+    }
+    .left,
+    .right{
+        flex: none;
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 15px;
+    }
+}
